@@ -62,17 +62,22 @@ To run this project, you need Python 3.x and the following libraries:
    cd house-price-prediction-bd
 Install dependencies:
 bash
+
 pip install pandas numpy scikit-learn
 Ensure the dataset (house_price_bd.csv) is in the project directory.
 Usage
+
 Run the script:
 bash
 python house_price_prediction.py
+
 The script will:
 Load and preprocess the dataset
 Train the Random Forest model
 Display model evaluation metrics (MSE and R² Score)
 Prompt you to enter house details for price prediction
+
+
 Example input:
 Enter number of bedrooms: 3
 Enter number of bathrooms: 2
@@ -102,6 +107,8 @@ Evaluation
 The model's performance is evaluated using:
 Mean Squared Error (MSE): Measures the average squared difference between actual and predicted prices.
 R² Score: Indicates the proportion of variance in the target variable explained by the model.
+
+
 Example output:
 ✅ Model Evaluation:
 Mean Squared Error: [value]
@@ -119,6 +126,7 @@ git commit -m "Add feature"
 git push origin feature-branch
 Open a Pull Request
 Please ensure your code follows PEP 8 style guidelines and includes appropriate documentation.
+
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 ```
