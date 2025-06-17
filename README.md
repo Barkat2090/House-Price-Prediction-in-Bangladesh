@@ -79,42 +79,64 @@ Prompt you to enter house details for price prediction
 
 
 Example input:
+
 Enter number of bedrooms: 3
+
 Enter number of bathrooms: 2
+
 Enter floor number: 4
+
 Enter floor area (in sq ft): 1500
+
 Enter occupancy status (e.g. occupied/vacant): vacant
+
 Enter city (e.g. dhaka, chattogram): dhaka
+
 Enter location (e.g. Banani): Banani
 Output:
+
 💰 Predicted House Price: ৳15,000,000
 Model Details
+
 Algorithm: Random Forest Regressor
+
 Parameters: 100 estimators, random state = 42
+
 Preprocessing:
 Removed currency symbols from Price_in_taka and converted to float
 Dropped irrelevant Title column
+
 Handled missing values:
 Numeric columns (Bedrooms, Bathrooms, Floor_area): Filled with median
 Floor_no: Converted to numeric, filled with -1 for non-numeric values
+
 Categorical columns (Occupancy_status, City, Location): Filled with 'Unknown'
 Encoded categorical variables using LabelEncoder
 Train-Test Split: 80% training, 20% testing
+
 Evaluation Metrics:
 Mean Squared Error (MSE)
 R² Score
 Evaluation
+
 The model's performance is evaluated using:
+
 Mean Squared Error (MSE): Measures the average squared difference between actual and predicted prices.
+
 R² Score: Indicates the proportion of variance in the target variable explained by the model.
 
 
 Example output:
+
 ✅ Model Evaluation:
+
 Mean Squared Error: [value]
+
 R² Score: [value]
+
 Contributing
 Contributions are welcome! To contribute:
+
 Fork the repository
 Create a new branch:
 bash
