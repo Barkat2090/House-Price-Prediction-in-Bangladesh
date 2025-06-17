@@ -94,6 +94,7 @@ The model's performance is evaluated using:
 Mean Squared Error (MSE): Measures the average squared difference between actual and predicted prices.
 R² Score: Indicates the proportion of variance in the target variable explained by the model.
 Example output:
+
 ✅ Model Evaluation:
 Mean Squared Error: [value]
 R² Score: [value]
