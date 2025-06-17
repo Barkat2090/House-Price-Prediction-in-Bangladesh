@@ -1,9 +1,9 @@
-markdown
 # House Price Prediction in Bangladesh
 
 This project uses a machine learning model to predict house prices in Bangladesh based on a dataset containing property details such as bedrooms, bathrooms, floor area, and location. The model is built using a Random Forest Regressor and includes data preprocessing, model training, evaluation, and a user-friendly interface for price prediction.
 
 ## Table of Contents
+
 - [Project Overview](#project-overview)
 - [Dataset](#dataset)
 - [Installation](#installation)
@@ -14,20 +14,25 @@ This project uses a machine learning model to predict house prices in Bangladesh
 - [License](#license)
 
 ## Project Overview
+
 The goal of this project is to predict house prices in Bangladesh using features like:
+
 - Number of bedrooms and bathrooms
 - Floor number and area (in square feet)
 - Occupancy status (e.g., occupied, vacant)
 - City and specific location
 
 The project includes:
+
 - Data preprocessing (handling missing values, encoding categorical variables)
 - Training a Random Forest Regressor model
 - Evaluating model performance using Mean Squared Error (MSE) and R² Score
 - A command-line interface for users to input house details and get price predictions
 
 ## Dataset
+
 The dataset (`house_price_bd.csv`) contains property listings in Bangladesh with the following columns:
+
 - **Title**: Description of the property (dropped during preprocessing)
 - **Bedrooms**: Number of bedrooms
 - **Bathrooms**: Number of bathrooms
@@ -41,13 +46,17 @@ The dataset (`house_price_bd.csv`) contains property listings in Bangladesh with
 The dataset is cleaned to handle missing values and convert the price column to a numeric format by removing the currency symbol (৳).
 
 ## Installation
+
 To run this project, you need Python 3.x and the following libraries:
+
 - pandas
 - numpy
 - scikit-learn
 
 ### Steps
+
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/your-username/house-price-prediction-bd.git
    cd house-price-prediction-bd
@@ -94,16 +103,20 @@ The model's performance is evaluated using:
 Mean Squared Error (MSE): Measures the average squared difference between actual and predicted prices.
 R² Score: Indicates the proportion of variance in the target variable explained by the model.
 Example output:
-
 ✅ Model Evaluation:
 Mean Squared Error: [value]
 R² Score: [value]
 Contributing
 Contributions are welcome! To contribute:
 Fork the repository
-Create a new branch (git checkout -b feature-branch)
+Create a new branch:
+bash
+git checkout -b feature-branch
 Make your changes
-Commit and push (git commit -m "Add feature", git push origin feature-branch)
+Commit and push:
+bash
+git commit -m "Add feature"
+git push origin feature-branch
 Open a Pull Request
 Please ensure your code follows PEP 8 style guidelines and includes appropriate documentation.
 License
